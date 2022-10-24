@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.lab18_graphskashitsin.GraphView
+        android:id="@+id/gv_paintGraphs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:rotation="0" />
+
+    <LinearLayout
+        android:id="@+id/layout_ctrlGraphs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_addNode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:onClick="onAddClick"
+            app:icon="@drawable/btnaddnode"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_rmvNode"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRemoveClick"
+            app:icon="@drawable/btnrmvnode"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_addLink"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onLinkClick"
+            app:icon="@drawable/btnaddlink"
+            android:text="l" />
+
+        <Button
+            android:id="@+id/btn_rmvLink"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRemoveLink"
+            app:icon="@drawable/btnrmvlink"
+            android:text="L-" />
+
+        <Button
+            android:id="@+id/btn_rnmNode"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onNodeName"
+            app:icon="@drawable/btnnamenode"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_rnmLink"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onLinkName"
+            app:icon="@drawable/btnnamelink"
+            android:text="LV" />
+
+        <Button
+            android:id="@+id/btn_toldb"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onToLDBClick"
+            app:icon="@drawable/localdb"
+            android:text="DB" />
+    </LinearLayout>
+</LinearLayout>

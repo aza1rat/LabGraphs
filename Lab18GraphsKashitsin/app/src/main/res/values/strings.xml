@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lab18-Graphs Kashitsin</string>
+    <string name="ok">ОК</string>
+    <string name="cancel">Отмена</string>
+    <string name="graphSelected">Выбрано:</string>
+    <string name="undirectGraph">Неориентированный</string>
+    <string name="directGraph">Ориентированный</string>
+    <string name="createGraph">Создать</string>
+    <string name="copyGraph">Копировать</string>
+    <string name="saveGraph">Сохранить</string>
+    <string name="loadGraph">Загрузить</string>
+    <string name="renameGraph">Переименовать</string>
+    <string name="deleteGraph">Удалить</string>
+</resources>
